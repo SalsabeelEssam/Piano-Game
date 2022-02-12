@@ -1,0 +1,470 @@
+Archive member included because of file (symbol)
+
+e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./TIMER_Program.o (__do_clear_bss)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./DIO_Interface.o
+LOAD ./GIE_Progrm.o
+LOAD ./KEYPAD_Programe.o
+LOAD ./TIMER_Program.o
+LOAD ./main.o
+LOAD e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x13d0
+ *(.vectors)
+ .vectors       0x00000000       0x54 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000078                __vector_1
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_3
+                0x00000078                __vector_13
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_2
+                0x00000078                __vector_15
+                0x00000078                __vector_14
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./DIO_Interface.o
+ .text          0x0000007c        0x0 ./GIE_Progrm.o
+ .text          0x0000007c        0x0 ./KEYPAD_Programe.o
+ .text          0x0000007c        0x0 ./TIMER_Program.o
+ .text          0x0000007c        0x0 ./main.o
+ .text          0x0000007c        0x0 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.DIO_SetPinDirection
+                0x0000007c      0x210 ./DIO_Interface.o
+                0x0000007c                DIO_SetPinDirection
+ .text.DIO_SetPinValue
+                0x0000028c      0x210 ./DIO_Interface.o
+                0x0000028c                DIO_SetPinValue
+ .text.DIO_SetPullUP
+                0x0000049c      0x198 ./DIO_Interface.o
+                0x0000049c                DIO_SetPullUP
+ .text.DIO_TogPinDirection
+                0x00000634       0xfa ./DIO_Interface.o
+                0x00000634                DIO_TogPinDirection
+ .text.DIO_TogPinValue
+                0x0000072e       0xfa ./DIO_Interface.o
+                0x0000072e                DIO_TogPinValue
+ .text.DIO_SetPortDirection
+                0x00000828       0x82 ./DIO_Interface.o
+                0x00000828                DIO_SetPortDirection
+ .text.DIO_SetPortValue
+                0x000008aa       0x82 ./DIO_Interface.o
+                0x000008aa                DIO_SetPortValue
+ .text.DIO_GetPortValue
+                0x0000092c       0x82 ./DIO_Interface.o
+                0x0000092c                DIO_GetPortValue
+ .text.DIO_GetPinValue
+                0x000009ae       0xf2 ./DIO_Interface.o
+                0x000009ae                DIO_GetPinValue
+ .text.GIE_VoidEnable
+                0x00000aa0       0x1c ./GIE_Progrm.o
+                0x00000aa0                GIE_VoidEnable
+ .text.GIE_VoidDisable
+                0x00000abc       0x1c ./GIE_Progrm.o
+                0x00000abc                GIE_VoidDisable
+ .text.KEYPAD_U8GetPressedKey
+                0x00000ad8       0x9a ./KEYPAD_Programe.o
+                0x00000ad8                KEYPAD_U8GetPressedKey
+ .text.KEYPAD_4x4_AjustSwitchNumber
+                0x00000b72      0x14c ./KEYPAD_Programe.o
+ .text.TIMER0_VoidINT
+                0x00000cbe       0xb6 ./TIMER_Program.o
+                0x00000cbe                TIMER0_VoidINT
+ .text.SET_f1_TIMER1
+                0x00000d74       0x38 ./TIMER_Program.o
+                0x00000d74                SET_f1_TIMER1
+ .text.SET_f2_TIMER1
+                0x00000dac       0x38 ./TIMER_Program.o
+                0x00000dac                SET_f2_TIMER1
+ .text.SET_f3_TIMER1
+                0x00000de4       0x38 ./TIMER_Program.o
+                0x00000de4                SET_f3_TIMER1
+ .text.SET_f4_TIMER1
+                0x00000e1c       0x38 ./TIMER_Program.o
+                0x00000e1c                SET_f4_TIMER1
+ .text.TIMER0_NORMAL_MODE_SET_Call_Back
+                0x00000e54       0x24 ./TIMER_Program.o
+                0x00000e54                TIMER0_NORMAL_MODE_SET_Call_Back
+ .text.TIMER0_CTC_MODE_SET_Call_Back
+                0x00000e78       0x24 ./TIMER_Program.o
+                0x00000e78                TIMER0_CTC_MODE_SET_Call_Back
+ .text.SET_Duty_Cycle_TIMER0
+                0x00000e9c       0x1c ./TIMER_Program.o
+                0x00000e9c                SET_Duty_Cycle_TIMER0
+ .text.__vector_11
+                0x00000eb8       0x66 ./TIMER_Program.o
+                0x00000eb8                __vector_11
+ .text.__vector_10
+                0x00000f1e       0x66 ./TIMER_Program.o
+                0x00000f1e                __vector_10
+ .text.TIMER2_VoidINT
+                0x00000f84       0xb6 ./TIMER_Program.o
+                0x00000f84                TIMER2_VoidINT
+ .text.TIMER2_NORMAL_MODE_SET_Call_Back
+                0x0000103a       0x24 ./TIMER_Program.o
+                0x0000103a                TIMER2_NORMAL_MODE_SET_Call_Back
+ .text.TIMER2_CTC_MODE_SET_Call_Back
+                0x0000105e       0x24 ./TIMER_Program.o
+                0x0000105e                TIMER2_CTC_MODE_SET_Call_Back
+ .text.SET_Duty_Cycle_TIMER2
+                0x00001082       0x1c ./TIMER_Program.o
+                0x00001082                SET_Duty_Cycle_TIMER2
+ .text.__vector_5
+                0x0000109e       0x66 ./TIMER_Program.o
+                0x0000109e                __vector_5
+ .text.__vector_4
+                0x00001104       0x66 ./TIMER_Program.o
+                0x00001104                __vector_4
+ .text.TIMER1_VoidINT
+                0x0000116a       0xec ./TIMER_Program.o
+                0x0000116a                TIMER1_VoidINT
+ .text.SET_Duty_Cycle_TIMER1
+                0x00001256       0x24 ./TIMER_Program.o
+                0x00001256                SET_Duty_Cycle_TIMER1
+ .text.__vector_6
+                0x0000127a       0x20 ./TIMER_Program.o
+                0x0000127a                __vector_6
+ .text.__vector_7
+                0x0000129a       0x58 ./TIMER_Program.o
+                0x0000129a                __vector_7
+ .text.__vector_8
+                0x000012f2       0x20 ./TIMER_Program.o
+                0x000012f2                __vector_8
+ .text.__vector_9
+                0x00001312       0x20 ./TIMER_Program.o
+                0x00001312                __vector_9
+ .text.main     0x00001332       0x9a ./main.o
+                0x00001332                main
+ .text.libgcc   0x000013cc        0x0 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000013cc        0x0 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x000013cc                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000013cc        0x0 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000013cc                exit
+                0x000013cc                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000013cc        0x4 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000013d0                _etext = .
+
+.data           0x00800060        0x0 load address 0x000013d0
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./DIO_Interface.o
+ .data          0x00800060        0x0 ./GIE_Progrm.o
+ .data          0x00800060        0x0 ./KEYPAD_Programe.o
+ .data          0x00800060        0x0 ./TIMER_Program.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060        0x8
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 ./DIO_Interface.o
+ .bss           0x00800060        0x0 ./GIE_Progrm.o
+ .bss           0x00800060        0x0 ./KEYPAD_Programe.o
+ .bss           0x00800060        0x0 ./TIMER_Program.o
+ .bss           0x00800060        0x0 ./main.o
+ .bss           0x00800060        0x0 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 e:/embededd iti/itiprogram/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.Call_Back_TIMER0_NORMAL_MODE_Ptr
+                0x00800060        0x2 ./TIMER_Program.o
+ .bss.Call_Back_TIMER0_CTC_MODE_Ptr
+                0x00800062        0x2 ./TIMER_Program.o
+ .bss.Call_Back_TIMER2_NORMAL_MODE_Ptr
+                0x00800064        0x2 ./TIMER_Program.o
+ .bss.Call_Back_TIMER2_CTC_MODE_Ptr
+                0x00800066        0x2 ./TIMER_Program.o
+ *(COMMON)
+                0x00800068                PROVIDE (__bss_end, .)
+                0x000013d0                __data_load_start = LOADADDR (.data)
+                0x000013d0                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800068        0x0
+                0x00800068                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800068                PROVIDE (__noinit_end, .)
+                0x00800068                _end = .
+                0x00800068                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1818
+ *(.stab)
+ .stab          0x00000000      0x714 ./DIO_Interface.o
+ .stab          0x00000714      0x144 ./GIE_Progrm.o
+                                0x1e0 (size before relaxing)
+ .stab          0x00000858      0x4f8 ./KEYPAD_Programe.o
+                                0x594 (size before relaxing)
+ .stab          0x00000d50      0x8a0 ./TIMER_Program.o
+                                0x960 (size before relaxing)
+ .stab          0x000015f0      0x228 ./main.o
+                                0x480 (size before relaxing)
+
+.stabstr        0x00000000      0xefd
+ *(.stabstr)
+ .stabstr       0x00000000      0xefd ./DIO_Interface.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(PIANO.elf elf32-avr)
+LOAD linker stubs
